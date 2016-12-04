@@ -38,6 +38,17 @@ def print_into(key, printer=print):
     for x in get_strings(key):
         printer(x)
 
+class IString:
+    def __init__(self, capitalize = False):
+        self.capitalize = capitalize
+    def __getattr__(self, name):
+        if self.capitalize:
+            name = name.upper()
+        name = name.replace('_', ' ')
+        return get_string(name)
+
+istr = IString(capitalize=False)
+
 if __name__ == '__main__':
     reload_text()
     print(__SEGMENTS__)

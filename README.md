@@ -37,3 +37,13 @@ after that you can use it like this
 >>> _('another test', lambda x: print('I said "' + x + '"'))
 I said "So be it"
 ```
+
+To simplify the access there's a kind of sintax sugar object, istr.
+```python
+>>> from istrings import istr
+>>> istr.test
+"This is test section.\nYou can use multiple lines because I don't care."
+>>> istr.another_test
+'So be it'
+```
+
