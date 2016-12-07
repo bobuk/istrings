@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-setup(name="istrings", version="0.0.1",
+setup(name="istrings", version="0.0.2",
       py_modules=['istrings'],
       url="http://github.com/bobuk/istrings",
       author="Grigory Bakunov",
@@ -16,3 +16,4 @@ setup(name="istrings", version="0.0.1",
       ],
 
 )
+
